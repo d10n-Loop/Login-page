@@ -1,0 +1,28 @@
+<link rel="stylesheet" href="style.css">
+
+  <div class="wrapper">
+    <h4 class="text-danger">{{msg}}</h4>
+    <form action="/verify" method="post">
+
+      <h2 class="fw-bold">Login</h2>
+        <div class="input-field">
+        <input type="text" name="username" required>
+        <label class="fw-medium">Enter your email</label>
+      </div>
+      <div class="input-field">
+        <input name="password" type="password" required>
+        <label class="fw-medium">Enter your password</label>
+      </div>
+      <div class="forget">
+        <label for="remember">
+          <input type="checkbox" id="remember">
+          <p>Remember me</p>
+        </label>
+        <a href="#">Forgot password?</a>
+      </div>
+      <button type="submit">Log In</button>
+      <div class="register">
+        <p>Don't have an account? <a href="#">Register</a></p>
+      </div>
+    </form>
+  </div>
